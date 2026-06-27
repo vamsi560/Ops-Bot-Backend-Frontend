@@ -3,7 +3,7 @@ set -e
 
 echo ">>> Building React frontend..."
 cd frontend
-REACT_APP_API_BASE_URL="https://ops-bot-a2h3fkekhygtg4aj.eastus-01.azurewebsites.net" ./node_modules/.bin/react-scripts build
+REACT_APP_API_BASE_URL="" ./node_modules/.bin/react-scripts build
 cd ..
 
 echo ">>> Copying build to backend/static..."
